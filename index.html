@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抗战时期政治光谱测试 (1937-1945)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 开始页面 -->
+    <div id="page-intro" class="page active">
+        <div class="container intro-container">
+            <h1>抗战时期政治光谱测试</h1>
+            <p class="subtitle">1937 - 1945 · 延安与重庆之间</p>
+            <div class="intro-desc">
+                <p>本测试包含 <strong>100道</strong> 基于真实历史情景的选择题，涵盖抗日战争时期的重大决策与争议事件。</p>
+                <p>通过你的选择，我们将在以下五个维度上分析你的政治立场：</p>
+                <div class="axes-preview">
+                    <div class="axis-item">
+                        <span class="axis-label-left">全民动员</span>
+                        <div class="axis-bar"><div class="axis-dot"></div></div>
+                        <span class="axis-label-right">正规军主导</span>
+                        <div class="axis-name">抗战路线</div>
+                    </div>
+                    <div class="axis-item">
+                        <span class="axis-label-left">民主协商</span>
+                        <div class="axis-bar"><div class="axis-dot"></div></div>
+                        <span class="axis-label-right">威权集中</span>
+                        <div class="axis-name">政治体制</div>
+                    </div>
+                    <div class="axis-item">
+                        <span class="axis-label-left">社会改革</span>
+                        <div class="axis-bar"><div class="axis-dot"></div></div>
+                        <span class="axis-label-right">维护现状</span>
+                        <div class="axis-name">经济政策</div>
+                    </div>
+                    <div class="axis-item">
+                        <span class="axis-label-left">群众运动</span>
+                        <div class="axis-bar"><div class="axis-dot"></div></div>
+                        <span class="axis-label-right">精英秩序</span>
+                        <div class="axis-name">社会文化</div>
+                    </div>
+                    <div class="axis-item">
+                        <span class="axis-label-left">独立自主</span>
+                        <div class="axis-bar"><div class="axis-dot"></div></div>
+                        <span class="axis-label-right">依赖外援</span>
+                        <div class="axis-name">外交立场</div>
+                    </div>
+                </div>
+                <p>最终你将被归入 <strong>10个历史派系</strong> 之一，并获得详细分析。</p>
+                <div class="warning-box">
+                    <p>⚠️ 本测试仅供历史学习与趣味参考，不代表任何现实政治立场判断。所有题目均基于真实历史事件与文献记载。</p>
+                </div>
+            </div>
+            <button id="btn-start" class="btn-primary">开始测试</button>
+        </div>
+    </div>
+
+    <!-- 答题页面 -->
+    <div id="page-quiz" class="page">
+        <div class="container quiz-container">
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <span id="progress-text" class="progress-text">1 / 100</span>
+            </div>
+            <div id="question-area" class="question-area">
+                <div class="question-context" id="question-context"></div>
+                <h2 class="question-text" id="question-text"></h2>
+                <div class="options" id="options-container"></div>
+            </div>
+            <div class="quiz-nav">
+                <button id="btn-prev" class="btn-secondary" disabled>上一题</button>
+                <button id="btn-next" class="btn-secondary" disabled>下一题</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 结果页面 -->
+    <div id="page-result" class="page">
+        <div class="container result-container">
+            <h1>你的测试结果</h1>
+            <div id="faction-result" class="faction-result"></div>
+            <div id="axes-result" class="axes-result"></div>
+            <div id="detail-analysis" class="detail-analysis"></div>
+            <div class="result-actions">
+                <button id="btn-restart" class="btn-primary">重新测试</button>
+                <button id="btn-share" class="btn-secondary">分享结果</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>抗战时期政治光谱测试 · 仅供历史学习与趣味参考</p>
+    </footer>
+
+    <script src="js/questions.js"></script>
+    <script src="js/factions.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
